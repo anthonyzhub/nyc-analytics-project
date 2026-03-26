@@ -89,3 +89,80 @@ sources:
             description: Y coordinate in NY State Plane projection system (NAD 83)
           - name: landmark
             description: Nearby landmark or point of interest
+      - name: source_nyc_open_restaurant_apps
+        description: |
+          NYC historical applications on Open Restaurants
+        columns:
+          - name: objectid
+            description: Unique ID for the service request
+            tests:
+              - unique
+              - not_null
+          - name: globalid
+            description: n/a
+          - name: seating_interest_sidewalk
+            description: Is restaurant interested in setting up dining on sidewalk
+          - name: restaurant_name
+            description: Restaurant name
+          - name: legal_business_name
+            description: Legal business name
+          - name: oing_business_as_dba
+            description: n/a
+          - name: building_number
+            description: Building number
+          - name: street
+            description: street
+          - name: borough
+            description: borough
+          - name: zip
+            description: postcode
+          - name: business_address
+            description: business address
+          - name: food_service_establishment
+            description: food service establishment
+          - name: sidewalk_dimension_length
+            description: sidewalk
+          - name: sidewalk_dimension_width
+            description: sidewalk
+          - name: sidewalk_dimension_area
+            description: sidewalk
+          - name: roadway_dimensions_length
+            description: roadway
+          - name: roadway_dimensions_width
+            description: roadway
+          - name: roadway_dimensions_area
+            description: roadway
+          - name: approved_for_sidewalk_seating
+            description: seating
+          - name: approved_for_roadway_seating
+            description: roadway
+          - name: qualify_alcohol
+            description: qualify
+          - name: sla_serial_number
+            description: sla serial number
+          - name: sla_license_type
+            description: sla license type
+          - name: landmark_district_or_building
+            description: landmark
+          - name: landmarkdistrict_terms
+            description: landmark
+          - name: healthcompliance_terms
+            description: health
+          - name: time_of_submission
+            description: time
+          - name: latitude
+            description: latitude
+          - name: longitude
+            description: longitude
+          - name: community_board
+            description: community
+          - name: council_district
+            description: council
+          - name: census_tract
+            description: census
+          - name: bin
+            description: bin
+          - name: bbl
+            description: bbl
+          - name: nta
+            description: nta
