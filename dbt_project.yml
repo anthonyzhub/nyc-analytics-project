@@ -1,36 +1,28 @@
-name: nyc_analytics
-version: 1.0.0
+name: 'cis9440_group8_project'
+version: '1.0.0'
 config-version: 2
-profile: default
-model-paths:
-  - models
-analysis-paths:
-  - analyses
-test-paths:
-  - tests
-seed-paths:
-  - seeds
-macro-paths:
-  - macros
-snapshot-paths:
-  - snapshots
-target-path: target
+
+profile: 'default'
+
+model-paths: ['models']
+analysis-paths: ['analyses']
+test-paths: ['tests']
+seed-paths: ['seeds']
+macro-paths: ['macros']
+snapshot-paths: ['snapshots']
+
+target-path: 'target'
 clean-targets:
-  - target
-  - dbt_packages
+  - 'target'
+  - 'dbt_packages'
+
 models:
-  nyc_analytics:
-    +materialized: table
-    assignment_work:
+  cis9440_group8_project:
+    group8_project:
       staging:
         +materialized: table
-        +schema: nyc_transit_restaurants_staging
+        +schema: cis9440_group8_staging
+
       marts:
         +materialized: table
-        +schema: nyc_transit_restaurants_marts
-        shared:
-          +materialized: table
-        open_restaurant_apps:
-          +materialized: table
-        dot_311:
-          +materialized: table
+        +schema: cis9440_group8_marts
