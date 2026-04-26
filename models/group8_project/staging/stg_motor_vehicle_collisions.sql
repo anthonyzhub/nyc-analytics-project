@@ -8,37 +8,6 @@ WITH source AS (
 
 cleaned AS (
     SELECT
-        * EXCEPT (
-            borough,
-            collision_id,
-            contributing_factor_vehicle_1,
-            contributing_factor_vehicle_2,
-            contributing_factor_vehicle_3,
-            contributing_factor_vehicle_4,
-            contributing_factor_vehicle_5,
-            crash_date,
-            crash_time,
-            cross_street_name,
-            latitude,
-            longitude,
-            number_of_cyclist_injured,
-            number_of_cyclist_killed,
-            number_of_motorist_injured,
-            number_of_motorist_killed,
-            number_of_pedestrians_injured,
-            number_of_pedestrians_killed,
-            number_of_persons_injured,
-            number_of_persons_killed,
-            off_street_name,
-            on_street_name,
-            vehicle_type_code1,
-            vehicle_type_code2,
-            vehicle_type_code_3,
-            vehicle_type_code_4,
-            vehicle_type_code_5,
-            zip_code
-        ),
-
         -- Identifier
         CAST(collision_id AS STRING) AS collision_id,
 
